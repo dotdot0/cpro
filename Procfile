@@ -1,0 +1,1 @@
+web: python cpro/cpro/main.py
