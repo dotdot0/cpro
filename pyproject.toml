@@ -2,7 +2,7 @@
 name = "cpro"
 version = "0.1.0"
 description = ""
-authors = ["“pratushrai0309” <“pratushrai0309@gmail.com”>"]
+authors = ["Pratush Rai <pratushrai0309@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
