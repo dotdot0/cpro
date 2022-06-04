@@ -6,6 +6,9 @@ authors = ["“pratushrai0309” <“pratushrai0309@gmail.com”>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+selenium = "^4.1.3"
+typer = {extras = ["all"], version = "^0.1.0"}
+chromedriver_binary="^103.0.5060.24.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
