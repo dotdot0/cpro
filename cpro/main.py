@@ -32,8 +32,8 @@ def main(name: str, gith: Optional[str] ) -> str:
         os.system("git branch -M main")
         time.sleep(1)
         os.system("git push -u origin main")
-        typer.echo(f'Projecet Created at {pro_file}')
-        typer.echo(f'Github Repo: https://github.com/{usern}/{name}')
+        typer.secho(f'Projecet Created at {pro_file}', fg=typer.colors.BRIGHT_GREEN)
+        typer.secho(f'Github Repo: https://github.com/{usern}/{name}', fg=typer.colors.BRIGHT_GREEN)
         return "Logged In"
 
       else:
@@ -41,7 +41,7 @@ def main(name: str, gith: Optional[str] ) -> str:
 
 
     else:
-      typer.echo(f'Project Created at {pro_file}')
+      typer.secho(f'Project Created at {pro_file}', fg=typer.colors.BRIGHT_GREEN)
       return "Created Project Without Github Repo!"
   
   except:

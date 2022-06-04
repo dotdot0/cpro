@@ -7,14 +7,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 import time
-
+import chromedriver_binary
 
 chrome_options = webdriver.ChromeOptions()
 #chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--no-sandbox')
-driver = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options)
+driver = webdriver.Chrome(chrome_options=chrome_options)
 
 class Github:
   def __init__(self, username: str, password: str, ch: str, name: str) -> None:
