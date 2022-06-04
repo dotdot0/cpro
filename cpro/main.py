@@ -4,7 +4,7 @@ import time
 from githubclass import Github
 from typing import Optional
 
-def main(name: str, gith: Optional[str] = '' ) -> str:
+def main(name: str, gith: Optional[str] ) -> str:
   typer.secho('Creating Your Project! 📦', fg=typer.colors.BRIGHT_MAGENTA, bold=True)
   cuf = os.getcwd()
   os.mkdir(name)
@@ -40,7 +40,7 @@ def main(name: str, gith: Optional[str] = '' ) -> str:
         typer.secho('Unable To Log In')
 
 
-    elif gith == '':
+    else:
       typer.echo(f'Project Created at {pro_file}')
       return "Created Project Without Github Repo!"
   
